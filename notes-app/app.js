@@ -1,5 +1,3 @@
-const add = require('./utils.js')
+const name = "Andrew"
 
-const sum = add(4, -2)
-
-console.log() 
+console.log(name) 
