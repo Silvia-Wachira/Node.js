@@ -1,3 +1,3 @@
-const name = "Andrew"
+require('./utils.js')
 
 console.log(name) 
