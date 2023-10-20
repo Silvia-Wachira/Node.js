@@ -4,4 +4,4 @@ const printNotes = getNotes()
 
 console.log(printNotes)
 
-console.log(chalk.green.inverse.bold('Success!'))
+console.log(chalk.blue.inverse.bold('Success!'))
