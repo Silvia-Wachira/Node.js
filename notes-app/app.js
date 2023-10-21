@@ -24,3 +24,12 @@ yargs.command({
     }
 })
 console.log(yargs.argv)
+
+// Create list command
+yargs.command({
+    command: 'list',
+    describe: 'List a note',
+    handler () {
+        console.log('List the note')
+    }
+})
