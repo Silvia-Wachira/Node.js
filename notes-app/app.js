@@ -1,7 +1,8 @@
 const chalk = require('./node_modules/chalk')
 const getNotes = require('./notes')
-const printNotes = getNotes()
 
-console.log(printNotes)
+const command = process.argv[2]
 
-console.log(chalk.blue.inverse.bold('Success!'))
+if (command === 'add') {
+    console.log('Adding note!')
+}
