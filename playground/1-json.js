@@ -1,4 +1,5 @@
 const fs = require('fs')
+const { join } = require('path')
 // const book = {
 //     title: 'Ego is the Enemy',
 //     author: 'Ryan Holiday'
@@ -10,4 +11,15 @@ const fs = require('fs')
 // const dataBuffer = fs.readFileSync('1-json.json') 
 // const dataJSON = dataBuffer.toString()
 // const data = JSON.parse(dataJSON)
-// console.log(data.title)
+// console.log(data.title) 
+
+
+const dataBuffer = fs.readFileSync('1-json.json')
+const dataJSON = dataBuffer.toString()
+const user = JSON.parse(dataJSON)
+
+user.name = "Gunther"
+user.age = "26"
+
+const userJSON = JSON.stringify(user)
+fs.writeFileSync('1-json.json', userJSON)
