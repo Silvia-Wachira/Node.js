@@ -4,6 +4,10 @@ const getNotes = function getNotes() {
 
 
 const addNote = function(title, body){
+    cons
+}
+
+const loadNotes = function () {
 
 }
 
