@@ -1,14 +1,28 @@
+const fs = require('fs')
 const getNotes = function getNotes() {
     return "Your notes! "
 } 
 
 
 const addNote = function(title, body){
-    cons
+    const notes = loadNotes()
+
+    notes.push({
+        title: title,
+        body: body
+    })
+    console.log(notes)
 }
 
 const loadNotes = function () {
-
+    try {
+        const dataBuffer = fs.readFileSync('notes.json')
+        const dataJSON = dataBuffer.toString()
+        return JSON.parse(dataJSON)
+    } catch (e) {
+        return []
+    }
+    
 }
 
 module.exports = {
