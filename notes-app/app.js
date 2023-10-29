@@ -26,7 +26,6 @@ yargs.command({
        
     }
 })
-
 // console.log(yargs.argv)
 //add , remove , read, list
 
