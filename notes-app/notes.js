@@ -55,7 +55,9 @@ const loadNotes =  () => {
     
 }
 
+const listNotes = () => {
 
+}
 
 module.exports = {
     getNotes: getNotes,
