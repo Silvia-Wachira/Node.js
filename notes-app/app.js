@@ -48,9 +48,9 @@ yargs.command({
 // Create list command
 yargs.command({
     command: 'list',
-    describe: 'List a note',
+    describe: 'List your notes',
     handler () {
-        console.log('Listing the note')
+        notes.listNotes()
     }
 })
 
@@ -62,6 +62,16 @@ yargs.command({
         console.log('Reading the note')
     }
 })
+
+//Print note title
+// yargs.command({
+//     command: 'list',
+//     describe: 'List notes',
+//     handler () {
+//         console.log('Printing the note')
+
+//     }
+// })
 
 // console.log(yargs.argv)
 yargs.parse()
