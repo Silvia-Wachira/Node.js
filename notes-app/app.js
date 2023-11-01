@@ -67,18 +67,8 @@ yargs.command({
     },
     handler (argv) {
         notes.readNotes(yargs.argv.title)
-    }
+    } 
 })
 
-//Print note title
-// yargs.command({
-//     command: 'list',
-//     describe: 'List notes',
-//     handler () {
-//         console.log('Printing the note')
 
-//     }
-// })
-
-// console.log(yargs.argv)
 yargs.parse()
