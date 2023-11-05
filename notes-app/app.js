@@ -68,7 +68,7 @@ yargs.command({
     handler (argv) {
         notes.readNotes(yargs.argv.title)
     } 
-})
+}) 
 
 
 yargs.parse()
