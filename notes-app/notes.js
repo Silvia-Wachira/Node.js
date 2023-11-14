@@ -49,7 +49,7 @@ const loadNotes =  () => {
         return []
     }
     
-
+}
 
 const listNotes = () => {
     const notes = loadNotes()
